@@ -1,0 +1,10 @@
+*.pth
+*.png
+*.log
+*.txt
+!requirements.txt
+*.lh
+*.history
+*.vscode
+*__pycache__
+myenv
