@@ -1,5 +1,5 @@
-# Projection Pattern Optimization
-## Paper title: Structured light pattern optimization for machine learning-based single-shot profilometry
+# Pattern Matters
+## Paper title; Pattern Matters: The Impact of Projection Patterns on Deep Learning 3D Profilometry
 
 This repository contains tools for generating simulated datasets and training machine learning models. The structure is organized into four main folders:
 
