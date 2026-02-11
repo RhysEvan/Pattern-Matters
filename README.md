@@ -1,11 +1,11 @@
-# Pattern Matters: Deep Learning 3D Profilometry
+# Pattern Matters: The Impact of Projection Patterns on Deep Learning 3-D ProfilometryDeep Learning 3D Profilometry
 
 [![Paper](https://img.shields.io/badge/IEEE-Paper-blue)](https://ieeexplore.ieee.org/document/11075725)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![InViLab](https://img.shields.io/badge/Lab-InViLab-orange)](https://github.com/InViLabUAntwerp)
 
-**Official implementation of "Pattern Matters: The Impact of Projection Patterns on Deep Learning 3D Profilometry"**
+**"Pattern Matters: The Impact of Projection Patterns on Deep Learning 3D Profilometry"**
 
 This repository contains tools for generating simulated datasets and training machine learning models to investigate how different projection patterns affect deep learning-based 3D surface reconstruction.
 
@@ -37,30 +37,30 @@ If you use this code in your research, please cite our paper:
 
 This research investigates the influence of different projection patterns on the performance of deep learning models for 3D surface profilometry.
 The study provides insights into how pattern selection affects reconstruction accuracy and model training dynamics.
-Predominant research was performed on synthetic surface data (Gaussian and Perlin noise) and benchmarked on a physical dataset to determine if the period findings still transfer to real -less ideal- data.
+Predominant research was performed on synthetic surface data (Gaussian and Perlin noise) and benchmarked on a physical dataset to determine if the optimal period and projection pattern findings still transfer to real data.
 
 ### Key Findings
 
 - **Pattern Symmetry and Repetition**: Saw-tooth and sinusoidal outperform non-conventional patterns, yet all projection patterns have a high performance
-- **Optimal Period Count**: $\log_{kernel size}(pixels/period amount)$ resulting in a whole number is the optimal period count for the image resolution
-- **Impact of Image Size and Ratio**: 1:1 height is still a necessity, even with the pattern repetition
+- **Optimal Period Count**: $\log_{\text{kernel size}}(\text{pixels}/\text{period amount})$ resulting in a whole number is the optimal period count for the image resolution
+- **Impact of Image Size and Ratio**: 1:1 height is still a necessity, even with the repeating pattern along the kernel path
 - **Pooling Operations**: Average-pooling increases performance in comparison to max-pooling
 
 ---
 
 ## 🖼️ Visual Examples
 
-### Network Architecture
-![Token U-Net Architecture](Paper_Images/Token_Unet.png)  
-*Our Token U-Net architecture for 3D surface reconstruction from projection patterns.*
-
 ### Projection Patterns
 ![Projection Patterns](Paper_Images/projection_patterns.png)  
 *Different projection patterns used in our study and their impact on reconstruction quality.*
 
+### Network Architecture
+![Token U-Net Architecture](Paper_Images/Token_Unet.png)  
+*Our Token U-Net architecture for 3D surface reconstruction, made to improve performance for high resolution images (640x480).*
+
 ### Results
 ![Scatter Plot Results](Paper_Images/scatter_plot_results.png)  
-*Quantitative comparison of reconstruction performance across different pattern types and optimizers.*
+*Quantitative comparison of reconstruction performance across different periods in a projected pattern, tested on different image resolutions.*
 
 ---
 
