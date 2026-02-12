@@ -8,3 +8,7 @@
 *.vscode
 *__pycache__
 myenv
+!Paper_Images
+!Paper_Images/projection_patterns.png
+!Paper_Images/scatter_plot_results.png
+!Paper_Images/Token_Unet.png
